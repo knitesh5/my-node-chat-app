@@ -3,10 +3,6 @@ var socket = io('http://localhost:3000');
 			console.log('connected to server');
 		
 
-		socket.emit('createMessage',{
-			from : 'nitesh',
-			text : 'hey  m here'
-		});
 	});
   	
   		socket.on('disconnect',function(){
