@@ -20,7 +20,7 @@ var io  = require('socket.io').listen(server);
 
 io.on('connection', function (socket) {
   	console.log('New user connected');
-
+ 
 
   	 socket.on('createMessage',(message)=>{
       console.log('createMessage',message);
